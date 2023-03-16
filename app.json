@@ -1,0 +1,69 @@
+{
+  "expo": {
+    "name": "stream-test-app",
+    "plugins": [
+      "@notifee/react-native",
+      "@react-native-firebase/app",   
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow $(PRODUCT_NAME) to access your photos.",
+          "savePhotosPermission": "Allow $(PRODUCT_NAME) to save photos.",
+          "isAccessMediaLocationEnabled": true
+        }
+      ],
+      [        
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 33,
+            "targetSdkVersion": 33,
+            "buildToolsVersion": "33.0.0"
+          },
+          "ios": {
+            "useFrameworks": "static",
+            "deploymentTarget": "13.0"
+          }
+        }
+      ] 
+    ],
+    "slug": "stream-test-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.plawarn.plawarn-mobil-app",
+      "googleServicesFile": "./GoogleService-Info.plist"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "googleServicesFile": "./google-services-android.json",
+      "package": "com.plawarn.plawarn_mobil_app"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    
+    "extra": {
+      "eas": {
+        "projectId": "66657e4d-6b6a-44df-8a0b-1048e8ec6869"
+      }
+    }
+  }
+}
